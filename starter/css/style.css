@@ -9,15 +9,69 @@ body {
   line-height: 1.5;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li {
+  margin: 0 20px;
+}
+
+.hero-banner {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/edgarsHeroImage.JPG");
+  display: flex;
+  background-position:-100% 35%;
+}
+
+.page-section {
+  display: flex;
+}
+
+.section-title {
+  border-right: 1px solid blue;
+  margin-right: 15px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 20px;
 }
+
+h1 {
+  background-color: rgb(23, 47, 165, 0.7);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.hero-banner h2 {
+  background-color: rgb(23, 47, 165, 0.7);
+  padding-right: 20px;
+  padding-left: 20px;
+  position: absolute;
+  top:42%;
+  right: 2%;
+  color: white;
+  font-size: 40px;
+}
+
+
 
 p {
   margin: 0;
 }
+
