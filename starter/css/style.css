@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --image1: url(../images/horiseon.jpg);
+  --image2: url(../images/amensFurniture.jpg);
+  --image3: url(../images/photoCharm.jpg);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +20,14 @@ body {
   justify-content: space-between;
   background-color: rgb(100, 149, 237);
   color: white;
+}
+
+header a {
+  color: white;
+}
+
+a:hover {
+  color:rgb(23, 47, 165, 0.7);
 }
 
 header a:visited { 
@@ -106,7 +120,7 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 225px 225px 225px;
+  grid-template-rows: 225px 225px 225px 50px;
   grid-template-areas:
   "horiseon horiseon"
   "horiseon horiseon"
@@ -115,20 +129,20 @@ h1 {
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url(../images/horiseon.jpg);
+  background-image: var(--image1);
   background-position: 10% 35%;
   
 }
 
 #amensFurniture {
   grid-area: amensFurniture;
-  background-image: url(../images/amensFurniture.jpg);
+  background-image: var(--image2);
   background-position: 10% 42%;
 }
 
 #photoCharm {
   grid-area: photoCharm;
-  background-image: url(../images/photoCharm.jpg);
+  background-image: var(--image3);
   background-position: 10% 80%;
 }
 
@@ -166,3 +180,9 @@ p {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
