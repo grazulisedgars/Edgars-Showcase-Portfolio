@@ -15,6 +15,13 @@ body {
   line-height: 1.5;
 }
 
+h1 {
+  background-color: rgb(23, 47, 165, 0.7);
+  padding-right: 20px;
+  padding-left: 120px;
+  margin-left: 0px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -54,6 +61,17 @@ header a:visited {
   background-position:-100% 35%;
 }
 
+.hero-banner h2 {
+  background-color: rgb(23, 47, 165, 0.7);
+  padding-right: 20px;
+  padding-left: 20px;
+  position: absolute;
+  top:42%;
+  right: 2%;
+  color: white;
+  font-size: 40px;
+}
+
 .page-section {
   display: flex;
   align-items: flex-start;
@@ -75,7 +93,6 @@ header a:visited {
   margin-right: 15px;
 }
 
-
 h1,
 h2,
 h3,
@@ -83,24 +100,6 @@ h4,
 h5,
 h6 {
   margin: 20px;
-}
-
-h1 {
-  background-color: rgb(23, 47, 165, 0.7);
-  padding-right: 20px;
-  padding-left: 120px;
-  margin-left: 0px;
-}
-
-.hero-banner h2 {
-  background-color: rgb(23, 47, 165, 0.7);
-  padding-right: 20px;
-  padding-left: 20px;
-  position: absolute;
-  top:42%;
-  right: 2%;
-  color: white;
-  font-size: 40px;
 }
 
 .flex-container {
@@ -138,6 +137,7 @@ h1 {
   grid-area: amensFurniture;
   background-image: var(--image2);
   background-position: 10% 42%;
+
 }
 
 #photoCharm {
@@ -180,9 +180,66 @@ p {
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-  main,
-  nav {
-    flex-direction: column;
-  }
+
+@media only screen and (max-width: 320px) {
+
+.header h1 {
+font-size: 15px;
+padding-left: 20px;
+}
+
+.header ul {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  font-size: 10px;
+}
+
+.hero-banner {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.hero-banner h2 {
+  font-size: 30px;
+}
+
+.page-section {
+  display: flex;
+  font-size: 10px;
+}
+
+.section-title {
+ margin-left: 10px;
+ padding-right: 10px;
+ font-size: 15px; /* h2 font size */
+}
+
+.page-section article {
+  margin-bottom: 30px;
+}
+
+.flex-container {
+  margin-right: 15px;
+}
+.grid-container {
+  margin-left: -10px;
+}
+
+.heading { /* Picture headline properties */
+  font-size: 10px;
+  padding: 2px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+ padding-left: 0px;
+}
 }
