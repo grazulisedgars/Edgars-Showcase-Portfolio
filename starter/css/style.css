@@ -66,14 +66,14 @@ header a:visited {
   padding-right: 20px;
   padding-left: 20px;
   position: absolute;
-  top:42%;
+  top:55%;
   right: 2%;
   color: white;
   font-size: 40px;
 }
 
 .page-section {
-  display: flex;
+  display: flex; 
   align-items: flex-start;
 }
 
@@ -192,7 +192,7 @@ p {
 @media only screen and (max-width: 1440px) { 
   .hero-banner h2 {
    position: absolute;
-   top: 28%;
+   top: 35%;
   }
  }
 
@@ -202,6 +202,12 @@ p {
     background-size: cover;
   }
  }
+ .hero-banner h2 {
+  font-size: 30px;
+  position: absolute;
+  top: 42%;
+}
+
 
  /* Media query for Tablet */ 
  @media only screen and (max-width: 768px) { 
@@ -217,6 +223,12 @@ p {
 
   .hero-banner {
     background-size: cover;
+  }
+
+  .hero-banner h2 {
+    font-size: 30px;
+    position: absolute;
+    top: 48%;
   }
 
   .flex-container h2 {
@@ -264,7 +276,7 @@ p {
   .hero-banner h2 {
     font-size: 30px;
     position: absolute;
-    top: 24%;
+    top: 48%%;
   }
   
   .page-section {
@@ -330,7 +342,7 @@ p {
   .hero-banner h2 {
     font-size: 30px;
     position: absolute;
-    top: 24%;
+    top: 48%;
   }
   
   .page-section {
@@ -396,7 +408,7 @@ p {
   .hero-banner h2 {
     font-size: 30px;
     position: absolute;
-    top: 24%;
+    top: 48%;
   }
   
   .page-section {
